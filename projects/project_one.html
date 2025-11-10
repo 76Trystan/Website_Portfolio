@@ -1,41 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Project One - My Portfolio">
-  <title>Project One | My Portfolio</title>
-  <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-  <!-- Header -->
-  <header>
-    <nav>
-      <div class="logo">My Portfolio</div>
-      <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../index.html#about">About</a></li>
-        <li><a href="../index.html#education">Education</a></li>
-        <li><a href="../index.html#projects">Projects</a></li>
-        <li><a href="../index.html#contact">Contact</a></li>
+<section id="project">
+  <h2>Smart Bridge Control System</h2>
 
-      </ul>
-    </nav>
-  </header>
+  <!-- Project Description / README -->
+  <div class="project-description">
+    <h3>Overview</h3>
+    <p>
+      This project is a Smart Bridge Control System, developed as part of a university systems engineering assignment.
+      The goal is to design, prototype, and program an automated bridge capable of managing both marine and road traffic 
+      through integrated sensors, actuators, and microcontroller-based control logic.
+    </p>
+    <p>
+      The system uses ultrasonic sensors, infrared sensors, DC motors, servos, and LEDs to simulate a functional drawbridge. 
+      It detects approaching vehicles or boats, raises or lowers accordingly, and communicates system status through a 
+      Wi-Fi-enabled web interface.
+    </p>
 
-  <!-- Project Content -->
-  <section id="project">
-    <h2>Project One</h2>
-    <img src="../images/project1-screenshot.jpg" alt="Project One Screenshot" style="max-width:100%; border-radius:8px;">
-    <p>Add project description here</p>
-    <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+    <h3>Features</h3>
+    <ul>
+      <li>Ultrasonic detection system for marine vessel detection and bridge activation</li>
+      <li>Light sensor array for vehicle detection and traffic control</li>
+      <li>DC motor and servo mechanisms for bridge movement simulation</li>
+      <li>LED traffic light system for vehicle and marine traffic signalling</li>
+      <li>ESP32 microcontroller with Wi-Fi for remote monitoring and control</li>
+      <li>Web-based UI for real-time status display and manual override</li>
+      <li>Modular code structure separating front-end, back-end, and hardware logic</li>
+    </ul>
+
+    <h3>System Architecture</h3>
+    <ol>
+      <li><strong>Hardware Layer:</strong> Ultrasonic and Light sensors, servos, DC motors, and LEDs connected to the ESP32.</li>
+      <li><strong>Software Layer:</strong> Embedded C/C++ code (via Arduino IDE) manages control logic and communication.</li>
+      <li><strong>User Interface Layer:</strong> Web-based dashboard (HTML, JavaScript) provides live monitoring and manual control.</li>
+    </ol>
+
+    <h3>Team Contributions</h3>
+    <ul>
+      <li><strong>Trystan:</strong> Developed ultrasonic and DC motor control code, integrated bridge logic, coordinated software-hardware testing, aligned front-end and back-end design.</li>
+      <li><strong>Tom:</strong> Designed traffic system architecture, implemented IR sensor code, collaborated with structures team for mechanical integration.</li>
+      <li><strong>Walter:</strong> Updated and refined front-end UI, assisted in IR sensor and traffic system code development.</li>
+      <li><strong>Agrim:</strong> Implemented Wi-Fi communication and live bridge status updates within the web interface.</li>
+      <li><strong>Kyle:</strong> Designed and assembled electrical components, LED system, wiring layout, supported testing of IR sensors.</li>
+      <li><strong>Nick:</strong> Led hardware prototyping, assembled components, and tested servo and sensor integration.</li>
+    </ul>
+
+    <h3>Testing & Validation</h3>
+    <ul>
+      <li>Ultrasonic Sensor: Calibrated for accurate distance detection to trigger bridge lift sequence.</li>
+      <li>Infrared Sensors: Tested for reliable vehicle detection and response.</li>
+      <li>Motor & Servo Systems: Verified stable movement and synchronization.</li>
+      <li>UI Integration: Confirmed live data feedback and control signal consistency.</li>
+      <li>Full System Test: Successfully integrated hardware and software into a working prototype.</li>
+    </ul>
+
+    <h3>Technologies Used</h3>
+    <ul>
+      <li>Microcontroller: ESP32</li>
+      <li>Languages: C++, Arduino, JavaScript, HTML</li>
+      <li>Tools: Arduino IDE</li>
+    </ul>
+
+    <!-- Project Images -->
+  <div class="project-images">
+    <img src="/Users/trystan/Documents/GitHub/Website_Portfolio/images/image1.jpg" alt="Project Image 1" style="max-width:100%; border-radius:8px; margin-bottom:10px;">
+    <img src="/Users/trystan/Documents/GitHub/Website_Portfolio/images/image2.JPG" alt="Project Image 2" style="max-width:100%; border-radius:8px; margin-bottom:10px;">
+    <img src="/Users/trystan/Documents/GitHub/Website_Portfolio/images/image3.png" alt="Project Image 3" style="max-width:100%; border-radius:8px; margin-bottom:10px;">
+  </div>
+
+
+    <a href="https://github.com/76Trystan/Engineering-Project-Demo" target="_blank">View on GitHub</a>
+    <br><br>
     <a href="../index.html">Back to Portfolio</a>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Trystan Frederick. All rights reserved.</p>
-  </footer>
-</body>
-</html>
-
+  </div>
+</section>
